@@ -1,0 +1,24 @@
+.cell {
+    display: flex;
+    width: 156px;
+    aspect-ratio: 1;
+    border-radius: 0.5rem;
+
+    transition: transform 0.2s ease;
+
+    cursor: pointer;
+
+    &__image {
+        width: 100%;
+        aspect-ratio: 1;
+        border-radius: 0.5rem;
+    }
+
+    &:hover {
+        transform: translate(5px, -5px);
+    }
+
+    &.crossed {
+        filter: blur(5px);
+    }
+}
